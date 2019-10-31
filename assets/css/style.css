@@ -2207,7 +2207,7 @@ li.product.hover .product-inner,
     width: 100%;
     height: auto;
     min-height: 100%;
-    box-shadow: 0px 0px 6px 0px rgba(1, 1, 1, 0.3);
+    box-shadow: 0px 10px 19px 0px rgba(1, 1, 1, 0.3);
     background-color: #fff;
     transition: all .5s;
 }
@@ -3222,6 +3222,7 @@ p.stars.selected a:not(.active):before {
 
 .owl-carousel.owl-loaded {
     display: block;
+    z-index: 0;
 }
 
 .owl-carousel.owl-loading {
@@ -7943,6 +7944,12 @@ section.section-posts-carousel header a+a {
 /*  Product cards Carousel
 /*===================================================================================*/
 
+#home-v1-product-cards-careousel {
+    border: solid 1px #ddd;
+    /* padding: 60px; */
+    margin-top: 32px;
+}
+
 section.section-product-cards-carousel header {
     margin-bottom: 0;
 }
@@ -7956,6 +7963,9 @@ section.section-product-cards-carousel header ul.nav .nav-link {
     font-size: 1.071em;
     line-height: 1.2em;
     color: #7b8186;
+    border-radius: 1em;
+    padding: 0.301em 1.129em;
+    transition: all .5s;
 }
 
 section.section-product-cards-carousel header ul.nav .nav-link+.nav-link {
@@ -7964,7 +7974,8 @@ section.section-product-cards-carousel header ul.nav .nav-link+.nav-link {
 
 section.section-product-cards-carousel header ul.nav .nav-link:focus,
 section.section-product-cards-carousel header ul.nav .nav-link:hover {
-    color: #333e48;
+    box-shadow: inset 0 0 0 2px #ebebeb;
+    color: inherit;
 }
 
 section.section-product-cards-carousel header ul.nav .active .nav-link {
@@ -8111,6 +8122,8 @@ section.section-product-cards-carousel .owl-carousel .owl-stage-outer {
 .products-2-1-2 .columns-2-1-2 {
     margin-left: -0.9375rem;
     margin-right: -0.9375rem;
+    border: solid 1px #ddd;
+    padding: 10px;
 }
 
 .products-2-1-2 .columns-2-1-2::after {
@@ -15494,11 +15507,6 @@ h3.faq-title {
     padding: 50px;
 }
 
-.paa .col-lg-4:nth-child(2n) {
-    border-left: 2px solid #f27b1d;
-    border-right: 2px solid #f27b1d;
-}
-
 .header-middle-right .header-middle-shipping {
     display: -webkit-box;
     display: -moz-box;
@@ -15515,13 +15523,6 @@ h3.faq-title {
     -webkit-box-pack: justify;
     justify-content: space-between;
     -ms-flex-pack: space-between;
-}
-
-@media only screen and (min-width: 575px) {
-    .paa .col-lg-4:nth-child(2n) {
-        border-left: 2px solid #f27b1d!important;
-        border-right: 2px solid #f27b1d!important;
-    }
 }
 
 .header-middle-right .header-middle-shipping .single-block-shipping {
@@ -15551,7 +15552,6 @@ h3.faq-title {
 
 .header-middle-right .header-middle-shipping .single-block-shipping .shipping-icon i {
     font-size: 24px;
-    color: #f27b1d;
     line-height: 46px;
     transition: all .5s ease-in-out;
 }
@@ -15580,12 +15580,203 @@ only screen and (max-width: 767px) {
     font-size: 13px;
 }
 
-.header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon {
-    background-color: #f27b1d;
-    border-color: #f27b1d;
-}
-
 .header-middle-right .header-middle-shipping .single-block-shipping:hover .shipping-icon i {
     color: #ffffff !important;
     transform: rotate(360deg);
 }
+
+.setting-nav {
+    padding: 10px;
+    position: relative;
+    z-index: 1333;
+}
+
+.aside2 {
+    position: fixed;
+    width: 273px;
+    height: auto;
+    background: #35404a;
+    right: 0;
+    top: 113px;
+    display: none;
+    z-index: 99;
+    padding: 20px;
+    color: #fff;
+}
+
+.aside2 a {
+    display: inline-block;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 20px!important;
+    color: #fff!important;
+    border-bottom: 1px solid #414141;
+}
+
+
+/* Color switch Div */
+
+.aside2 .blackDiv {
+    height: 20px;
+    width: 20px;
+    background: black;
+}
+
+.aside2 .redDiv {
+    height: 20px;
+    width: 20px;
+    background: #ea1b25;
+}
+
+.aside2 .pinkDiv {
+    height: 20px;
+    width: 20px;
+    background: #ce1d76;
+}
+
+.aside2 .orangeDiv {
+    height: 20px;
+    width: 20px;
+    background: #f89a20;
+}
+
+.aside2 .darkGreenDiv {
+    height: 20px;
+    width: 20px;
+    background: #21b68e;
+}
+
+.aside2 .default {
+    height: 20px;
+    width: 20px;
+    background: #fed700;
+}
+
+.aside2 .greenDiv {
+    height: 20px;
+    width: 20px;
+    background: #a3d133;
+}
+
+.aside2 .navyDiv {
+    height: 20px;
+    width: 20px;
+    background: #ce1d76;
+}
+
+.aside2 .yellowDiv {
+    height: 20px;
+    width: 20px;
+    background: #fd8d54;
+}
+
+.aside2 .goldDiv {
+    height: 20px;
+    width: 20px;
+    background: #dab26d
+}
+
+.aside2 .flat-blueDiv {
+    height: 20px;
+    width: 20px;
+    background: #00abc5;
+}
+
+.aside2 .bluekDiv {
+    height: 20px;
+    width: 20px;
+    background: #0787ea;
+}
+
+.toggle-bar {
+    width: 41px;
+    margin: 12px 0;
+    position: fixed;
+    display: block;
+    right: 0;
+    border-radius: 12px 0 3px 10px;
+    top: 114px;
+    padding: 10px;
+    z-index: 100;
+    /* background: #fd8d54; */
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff
+}
+
+.toggle-wrap.active {
+    right: 271px;
+    transition: all .6s ease-in-out;
+}
+
+@-webkit-keyframes rotating
+/* Safari and Chrome */
+
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+.colorSelect a {
+    cursor: pointer;
+}
+
+
+/*Start Arrow */
+
+.up {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 5000;
+}
+
+.up a {
+    display: table;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.up i {
+    display: none;
+    text-align: center;
+    margin: 16px;
+}
+
+
+/*End Arrow */
