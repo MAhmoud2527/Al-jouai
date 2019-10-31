@@ -436,7 +436,6 @@ input[type="submit"] {
     color: #333e48;
     background-color: #efecec;
     border-color: #efecec;
-    float: right;
 }
 
 .btn:hover,
@@ -15879,4 +15878,8 @@ a.map-btn {
 
 .section-onsale-product {
     overflow: hidden!important;
+}
+
+.section-onsale-product .product-inner .price-add-to-cart .add_to_cart_button {
+    float: right;
 }
