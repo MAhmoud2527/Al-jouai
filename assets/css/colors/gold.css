@@ -496,3 +496,8 @@ section.section-posts-carousel header a:hover {
 .up a {
     background: #d6a95d;
 }
+
+a.map-btn {
+    color: #fff;
+    background-color: #d6a95d;
+}
