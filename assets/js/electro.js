@@ -1482,4 +1482,9 @@
         autoplayTimeout: 3000,
         autoplayHoverPause: true
     });
+    // Nice Scroll Body
+    $("body").niceScroll({
+        cursorcolor: "#fed700",
+        cursorborder: "1px solid #fed700",
+    });
 })(jQuery);
