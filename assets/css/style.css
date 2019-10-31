@@ -16265,3 +16265,7 @@ div#preloader {
     box-shadow: 1px 20px 20px 11px #ddd;
     transition: all .2s;
 }
+
+.newproduct .products li.product .fa-star {
+    cursor: pointer;
+}
