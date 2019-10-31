@@ -15780,3 +15780,49 @@ only screen and (max-width: 767px) {
 
 
 /*End Arrow */
+
+.social-iconsSide {
+    position: fixed;
+    top: 180px;
+    left: 0;
+    width: 50px;
+    height: 290px;
+    z-index: 999999;
+}
+
+.social-iconsSide ul li {
+    display: block;
+    padding: 10px 10px;
+    background: #F0F0E9;
+    border: 1px solid transparent;
+    transition: all .5s ease;
+}
+
+.social-iconsSide ul li i {
+    color: white;
+}
+
+.social-iconsSide ul li:hover {
+    text-align: center;
+    width: 60px;
+}
+
+.social-iconsSide ul li:first-child {
+    background: #0083c9;
+}
+
+.social-iconsSide ul li:last-child {
+    background: #ce3c2d;
+}
+
+.social-iconsSide ul li:nth-child(2) {
+    background: #5bbcec;
+}
+
+.social-iconsSide ul li:nth-child(3) {
+    background: #ff4518;
+}
+
+.social-iconsSide ul li:nth-child(4) {
+    background: #90c9dc;
+}
