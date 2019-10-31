@@ -15883,3 +15883,14 @@ a.map-btn {
 .section-onsale-product .product-inner .price-add-to-cart .add_to_cart_button {
     float: right;
 }
+
+div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999999999999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff url("../images/preloader.gif") no-repeat center center;
+}

@@ -1487,4 +1487,6 @@
         cursorcolor: "#fed700",
         cursorborder: "1px solid #fed700",
     });
+
+
 })(jQuery);
