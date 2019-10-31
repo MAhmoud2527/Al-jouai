@@ -330,7 +330,7 @@
             $(this).find('.owl-item.active').last().addClass('last-active');
         });
         $owl_recently_added_products_carousel.owlCarousel({
-            "items": "6",
+            "items": "3",
             "nav": true,
             "slideSpeed": 300,
             "dots": true,
@@ -353,7 +353,7 @@
                     items: 3,
                 },
                 1200: {
-                    items: 6,
+                    items: 4,
                 },
                 onTranslate: function() {
                     echo.render();
@@ -740,13 +740,16 @@
             }
         });
 
+        // tooltip active js
+        $('[data-toggle="tooltip"]').tooltip();
 
         $('.home-v1-product-cards-carousel').owlCarousel({
             "items": 1,
-            "nav": false,
+            "nav": true,
             "slideSpeed": 300,
             "dots": true,
             "rtl": is_rtl,
+            loop: true,
             "paginationSpeed": 400,
             "navText": ["", ""],
             "margin": 0,
@@ -1487,6 +1490,46 @@
         cursorcolor: "#fed700",
         cursorborder: "1px solid #fed700",
     });
+
+
+
+
+    // category Carousel For 3 row
+    $('.category-carousel-active').each(function() {
+        var $this = $(this);
+        var $arrowContainer = $(this).siblings('.section-title-2').find('.category-append');
+        var $row = $this.attr("data-row") ? parseInt($this.attr("data-row"), 10) : 1;
+        $this.slick({
+            infinite: true,
+            arrows: true,
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows: $row,
+            prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+            nextArrow: '<button class="slick-next"><i class="fa fa-angle-right"></i></button>',
+            appendArrows: $arrowContainer,
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        rows: 3,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        rows: 3,
+                    }
+                },
+            ]
+        });
+    });
+
+
 
 
 })(jQuery);
