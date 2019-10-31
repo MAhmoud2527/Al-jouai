@@ -1646,8 +1646,6 @@ img.desaturate:hover {
     text-decoration: none;
     background-color: #f5f5f5;
     font-weight: bold;
-    border-left: 5px solid #fd8d54;
-    border-right: 5px solid #fd8d54;
     box-shadow: 0px 0px 11px 8px #ddd;
 }
 
