@@ -6707,7 +6707,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
 
 .section-onsale-product header {
     border-bottom: none;
-    margin-bottom: 1em;
+    margin-bottom: 4em;
 }
 
 .section-onsale-product header h1 {
@@ -15891,4 +15891,16 @@ div#preloader {
     height: 100%;
     overflow: visible;
     background: #fff url("../images/preloader.gif") no-repeat center center;
+}
+
+.section-onsale-product {
+    margin-top: 55px;
+}
+
+.section-onsale-product .item {
+    margin-bottom: 50px;
+}
+
+.section-onsale-product .price-add-to-cart {
+    margin-top: 20px;
 }
