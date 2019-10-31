@@ -436,6 +436,7 @@ input[type="submit"] {
     color: #333e48;
     background-color: #efecec;
     border-color: #efecec;
+    float: right;
 }
 
 .btn:hover,
@@ -15870,5 +15871,12 @@ a.map-btn {
     display: inline-block;
     text-transform: capitalize;
     font-weight: 600;
-    ;
+}
+
+.home-v1-deals-and-tabs .owl-carousel .owl-stage-outer {
+    overflow: unset!important;
+}
+
+.section-onsale-product {
+    overflow: hidden!important;
 }

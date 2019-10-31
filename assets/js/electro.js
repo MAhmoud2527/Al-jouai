@@ -1472,4 +1472,14 @@
     $('.up').click(function() {
         $('html, body').animate({ scrollTop: 0 }, 'slow');
     });
+    var owl = $('.SpecialOffer');
+    owl.owlCarousel({
+        center: true,
+        items: 1,
+        margin: 60,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true
+    });
 })(jQuery);
