@@ -768,7 +768,13 @@
             "touchDrag": true
         });
     });
-
+    $(function() {
+        $(".fa-star-o").click(function() {
+            $(".fa-star-o").css('cursor', 'pointer');
+            $(this).removeClass("fa-star-o").addClass("fa-star");
+            $(this).nextAll("fa-star").removeClass("fa-star").addClass("fa-star-o");
+        });
+    });
     /*===================================================================================*/
     /*  Accessories Product Check
     /*===================================================================================*/
