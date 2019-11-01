@@ -429,7 +429,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     font-size: 0.875rem;
-    border-radius: 1.571em;
+    /* border-radius: 1.571em; */
     padding: 1.036em 2.134em;
     border-width: 0;
     display: inline-block;
@@ -1216,8 +1216,8 @@ section {
 }
 
 section header {
-    margin-bottom: 2.857em;
-    border-bottom: 1px solid #dadada;
+    /* margin-bottom: 2.857em; */
+    /* border-bottom: 1px solid #dadada; */
 }
 
 section header h1,
@@ -7700,13 +7700,13 @@ ul.products.columns-6>li {
 
 section.section-products-carousel header,
 section.section-posts-carousel header {
-    margin-bottom: 0.857em;
+    /* margin-bottom: 0.857em; */
 }
 
 section.section-products-carousel header .owl-nav,
 section.section-posts-carousel header .owl-nav {
     float: right;
-    line-height: 3.607em;
+    line-height: 1.607em;
 }
 
 section.section-products-carousel header a,
@@ -7947,7 +7947,7 @@ section.section-posts-carousel header a+a {
 #home-v1-product-cards-careousel {
     border: solid 1px #ddd;
     /* padding: 60px; */
-    margin-top: 32px;
+    /* margin-top: 32px; */
 }
 
 section.section-product-cards-carousel header {
@@ -7956,7 +7956,7 @@ section.section-product-cards-carousel header {
 
 section.section-product-cards-carousel header ul.nav {
     float: right;
-    line-height: 3.571em;
+    line-height: 1.571em;
 }
 
 section.section-product-cards-carousel header ul.nav .nav-link {
@@ -16022,13 +16022,10 @@ div#preloader {
     margin-right: 6px!important;
     width: 25px!important;
     height: 28px!important;
-    color: #17a2b8!important;
+    color: #00285b;
     /* font-size: 18px!important; */
     /* text-align: center!important; */
-    border: 2px solid #f27b1d!important;
-    -webkit-border-radius: 50%!important;
-    -moz-border-radius: 50%!important;
-    border-radius: 20%!important;
+    border: 2px solid #f1671f!important;
     z-index: 999!important;
     cursor: pointer!important;
     background-color: #ffffff!important;
@@ -16105,13 +16102,13 @@ div#preloader {
 
 .section-title-2:before,
 .sidebar-title:before {
-    top: 38%;
+    top: 26%;
     left: 1px;
     content: "";
     width: 81%;
     height: 2px;
     position: absolute;
-    background-color: #444444;
+    background-color: #00285b;
     -webkit-transform: translate(0, -50%);
     -moz-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -16299,4 +16296,68 @@ div#preloader {
 .product-action-link .fa-heart:hover {
     transform: rotate(360deg)!important;
     transition: all .5s;
+}
+
+.activeStar {
+    color: red;
+}
+
+.tc-heading-style5 {
+    display: inline-block;
+}
+
+.section-product-cards-carousel .nav-inline .nav-item+.nav-item {
+    margin-left: 0!important;
+}
+
+.divDivider {
+    border: solid 1px #00285b;
+    position: absolute;
+    top: 13px;
+    width: 77%;
+    margin-left: 16%;
+}
+
+.divDivider2 {
+    border: solid 1px #00285b;
+    position: absolute;
+    top: 13px;
+    width: 52%;
+    margin-left: 13%;
+}
+
+.home-v1-recently-viewed-products-carousel header,
+.section-product-cards-carousel header,
+.section-title-3 {
+    position: relative;
+}
+
+.section-title-3:before {
+    top: 23%;
+    left: 140px;
+    content: "";
+    width: 52%;
+    height: 2px;
+    position: absolute;
+    background-color: #00285b;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: -9999;
+}
+
+.sidebar-title3:before {
+    top: 21%;
+    left: 16%;
+    content: "";
+    width: 76%;
+    height: 2px;
+    position: absolute;
+    background-color: #00285b;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    z-index: -9999;
 }

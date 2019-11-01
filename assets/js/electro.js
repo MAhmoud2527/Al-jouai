@@ -775,6 +775,12 @@
             $(this).nextAll("fa-star").removeClass("fa-star").addClass("fa-star-o");
         });
     });
+    $(function() {
+        $(".add_to_wishlist").click(function() {
+            $(".add_to_wishlist").css('cursor', 'pointer');
+            $(this).addClass("activeStar");
+        });
+    });
     /*===================================================================================*/
     /*  Accessories Product Check
     /*===================================================================================*/
