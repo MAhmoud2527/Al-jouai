@@ -9996,6 +9996,12 @@ section.section-posts-carousel .post-carousel .owl-dots {
 .footer-bottom-widgets {
     background-color: #f8f8f8;
     padding: 4.143em 0 5.714em 0;
+    width: 100%;
+    background: url(../images/footer/pattern.jpg) no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+    position: relative;
 }
 
 .footer-bottom-widgets .widget-title {
@@ -10013,7 +10019,7 @@ section.section-posts-carousel .post-carousel .owl-dots {
 
 .footer-bottom-widgets ul>li>a {
     font-size: 1em;
-    color: #333e48;
+    color: #d0d4d8;
 }
 
 .footer-bottom-widgets ul>li>a:hover,
@@ -16422,4 +16428,28 @@ section.section-posts-carousel header a:hover,
     color: #383838!important;
     background: #eac600!important;
     transition: all .5s!important;
+}
+
+.go-top {
+    background: #fed700;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    height: 48px;
+    left: 50%;
+    margin-left: -24px;
+    position: absolute;
+    right: 50%;
+    width: 48px;
+    line-height: 46px;
+    z-index: 5;
+    top: 0;
+}
+
+.fa-angle-double-up {
+    content: "\f102";
+    position: relative;
+    left: 17px;
+    top: 4px;
 }
