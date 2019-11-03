@@ -6425,6 +6425,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
 #owl-main .item .caption {
     padding-top: 85px;
     display: table-cell;
+    z-index: 12222!important;
 }
 
 
@@ -16394,7 +16395,8 @@ div#preloader {
     z-index: -9999;
 }
 
-.home-v1-slider .owl-dots {
+.home-v1-slider .owl-dots,
+#home-v1-product-cards-careousel .owl-dots {
     /* position: absolute; */
     /* bottom: 20px; */
     /* display: block; */
@@ -16457,11 +16459,13 @@ section.section-posts-carousel header a:hover,
 .Section-curve {
     position: absolute;
     z-index: 1;
-    right: 0;
-    left: 0;
-    bottom: -10px;
-    width: 100%;
-    height: auto;
-    -webkit-transform: rotate(0.01deg);
-    transform: rotate(0.01deg);
+    top: -6px;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+#main {
+    position: relative;
 }
