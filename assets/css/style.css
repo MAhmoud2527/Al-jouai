@@ -7117,6 +7117,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
     border-left: 2px solid #fed700;
     border-top: 2px solid #fed700;
     background: none!important;
+    opacity: 1;
 }
 
 .products-carousel-tabs .nav-link.active::after {
@@ -7128,6 +7129,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
     bottom: 6px;
     border-right: 2px solid #fed700;
     border-bottom: 2px solid #fed700;
+    opacity: 1;
 }
 
 
@@ -16485,4 +16487,114 @@ svg:not(:root) {
     bottom: -67px;
     z-index: 9;
     right: 60px;
+}
+
+.navbar-primary,
+.footer-newsletter,
+.button:hover::before,
+li.product:hover .button::before,
+li.product:hover .button,
+li.product:hover .added_to_cart::before,
+.owl-item .product:hover .button::before,
+.owl-item .product:hover .button,
+.owl-item .product:hover .added_to_cart::before,
+.widget_price_filter .ui-slider .ui-slider-handle,
+.woocommerce-pagination ul.page-numbers>li a.current,
+.woocommerce-pagination ul.page-numbers>li span.current,
+.pagination ul.page-numbers>li a.current,
+.pagination ul.page-numbers>li span.current,
+.owl-dots .owl-dot.active,
+.products-carousel-tabs .nav-link.active::before,
+.deal-progress .progress-bar,
+.products-2-1-2 .nav-link.active::before,
+.ad .ad-action>a::after,
+.header-v1 .navbar-search .input-group .btn,
+.header-v3 .navbar-search .input-group .btn,
+.vertical-menu>li:first-child,
+.widget.widget_tag_cloud .tagcloud a:hover,
+.widget.widget_tag_cloud .tagcloud a:focus,
+.navbar-mini-cart .cart-items-count,
+.wc-tabs>li.active a::before,
+.ec-tabs>li.active a::before,
+.electro-nav-tabs>li.nav-item a.active::before,
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments,
+.products-2-1-2 .nav-link:hover::before,
+.single_add_to_cart_button,
+.wpb-accordion .vc_tta.vc_general .vc_tta-panel .vc_tta-panel-heading .vc_tta-panel-title>a:not(.collapsed):before,
+ul.products>li.product.list-view:not(.list-view-small) .button:hover,
+ul.products>li.product.list-view:not(.list-view-small) .button:focus,
+ul.products>li.product.list-view:not(.list-view-small) .button:active,
+ul.products>li.product.list-view.list-view-small .button:hover::after,
+ul.products>li.product.list-view.list-view-small .button:focus::after,
+ul.products>li.product.list-view.list-view-small .button:active::after,
+.widget_electro_products_carousel_widget .section-products-carousel .owl-nav .owl-prev:hover,
+.widget_electro_products_carousel_widget .section-products-carousel .owl-nav .owl-next:hover,
+.full-color-background .header-v3,
+.full-color-background .top-bar,
+.pace .pace-progress {
+    background-color: #fed700;
+}
+
+.products-carousel-tabs .nav-link {
+    position: relative;
+}
+
+.products-carousel-tabs .nav-link::before {
+    content: '';
+    position: absolute;
+    /* height: 24px;
+    width: 53px; */
+    height: 0;
+    width: 0;
+    left: -21px;
+    top: -14px;
+    border-left: 2px solid #fed700;
+    border-top: 2px solid #fed700;
+    background: none!important;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.products-carousel-tabs .nav-link::after {
+    content: '';
+    position: absolute;
+    /* height: 35px;
+    width: 48px; */
+    opacity: 0;
+    height: 0;
+    width: 0;
+    right: -16px;
+    bottom: 6px;
+    border-right: 2px solid #fed700;
+    border-bottom: 2px solid #fed700;
+    transition: all .3s ease-in-out;
+}
+
+.products-carousel-tabs .nav-link:hover::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 53px;
+    left: -21px;
+    opacity: 1;
+    top: -14px;
+    border-left: 2px solid #fed700;
+    border-top: 2px solid #fed700;
+    background: none!important;
+    transition: all .5s ease-in-out;
+}
+
+.products-carousel-tabs .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    height: 35px;
+    width: 48px;
+    right: -16px;
+    opacity: 1;
+    bottom: 6px;
+    border-right: 2px solid #fed700;
+    border-bottom: 2px solid #fed700;
+    transition: all .5s ease-in-out;
 }
