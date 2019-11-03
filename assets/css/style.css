@@ -9998,8 +9998,8 @@ section.section-posts-carousel .post-carousel .owl-dots {
     background-color: #f8f8f8;
     padding: 4.143em 0 5.714em 0;
     width: 100%;
-    background: url(../images/footer/pattern.jpg) no-repeat;
-    background-size: cover;
+    background: url(../images/footer/pattern.jpg);
+    /* background-size: cover; */
     background-position: center top;
     color: #fff;
     position: relative;
@@ -16433,27 +16433,28 @@ section.section-posts-carousel header a:hover,
 }
 
 .go-top {
-    background: #fed700;
+    background: #ffffff;
     border-radius: 50%;
-    color: #fff;
+    color: #252525;
     display: inline-block;
     font-size: 20px;
     height: 48px;
-    left: 50%;
+    /* left: 50%; */
     margin-left: -24px;
     position: absolute;
-    right: 50%;
+    border: solid 2px #fed700;
+    right: 169px;
     width: 48px;
     line-height: 46px;
-    z-index: 5;
-    top: 0;
+    z-index: 10;
+    top: 44px;
 }
 
 .fa-angle-double-up {
     content: "\f102";
     position: relative;
-    left: 17px;
-    top: 4px;
+    left: 15px;
+    top: 2px;
 }
 
 .Section-curve {
@@ -16468,4 +16469,20 @@ svg:not(:root) {
 
 #main {
     position: relative;
+}
+
+.footer-newsletter {
+    position: relative;
+}
+
+.footer-newsletter:before {
+    content: '';
+    border-top: 67px solid #fed700;
+    border-left: 147px solid transparent;
+    border-right: 134px solid transparent;
+    position: absolute;
+    /* right: 0; */
+    bottom: -67px;
+    z-index: 9;
+    right: 60px;
 }
