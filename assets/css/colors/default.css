@@ -430,9 +430,12 @@ a.map-btn {
 }
 
 .vertical-menu>li:first-child,
-.header-v1 .navbar-search .input-group .btn,
-.navbar-mini-cart .cart-items-count {
+.header-v1 .navbar-search .input-group .btn {
     background-color: #00285b;
+}
+
+.navbar-mini-cart .cart-items-count {
+    background-color: #d9534f;
 }
 
 .dropdown-menu-mini-cart .wc-forward.checkout {
