@@ -434,9 +434,9 @@ input[type="submit"] {
     padding: 1.036em 2.134em;
     border-width: 0;
     display: inline-block;
-    color: #333e48;
-    background-color: #efecec;
-    border-color: #efecec;
+    color: #fff;
+    background-color: #c33728;
+    border-color: #c33728;
 }
 
 .btn:hover,
@@ -743,7 +743,7 @@ input[type="submit"]:disabled {
 .btn-secondary,
 table.cart .coupon .button,
 .checkout_coupon .form-row-last .button {
-    background-color: #eac600;
+    background-color: #3a7988;
     color: #fff;
 }
 
@@ -1291,7 +1291,7 @@ section>h2 {
 }
 
 .page .entry-header.header-with-cover-image .caption .entry-subtitle {
-    color: #434343;
+    color: #fff;
     font-size: 1.286em;
     position: relative;
     top: 1.667em;
@@ -2369,7 +2369,7 @@ li.product a,
 .section-onsale-product .onsale-product a,
 .section-onsale-product-carousel .onsale-product-carousel .onsale-product .onsale-product-content a,
 .products-carousel .owl-item .product a {
-    color: #00285b;
+    color: #c33728;
 }
 
 li.product a:focus,
@@ -6055,7 +6055,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
 .navbar-primary a[data-toggle="dropdown"]::after {
     content: '\79';
     font-family: 'font-electro';
-    color: #333e48;
+    color: #fff;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -6068,7 +6068,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
     line-height: 2.143em;
     font-weight: bold;
     font-size: 1.142em;
-    color: #333e48;
+    color: #fff;
 }
 
 .navbar-primary .navbar-nav+.navbar-nav,
@@ -12799,6 +12799,7 @@ p.stars:hover a::before {
     padding-top: 0.833em;
     padding-bottom: 0;
     margin-bottom: 0;
+    color: #00285b;
 }
 
 .team-member-wrapper .team-member .profile h3 small {
@@ -16196,11 +16197,7 @@ div#preloader {
 }
 
 .product-item .product-content h4 a {
-    color: #444444;
-}
-
-.product-item .product-content h4 a:hover {
-    color: #00285b;
+    color: #c33728;
 }
 
 .product-item .product-content .pricebox .regular-price {
@@ -16271,7 +16268,7 @@ div#preloader {
 }
 
 .product-action-link .fa-heart {
-    background: #00285b;
+    background: #c33728;
     color: #fff;
     padding: 9px;
     border-radius: 50%;
@@ -16428,7 +16425,7 @@ svg:not(:root) {
 
 .footer-newsletter:before {
     content: '';
-    border-top: 67px solid #00285b;
+    border-top: 67px solid #c33728;
     border-left: 147px solid transparent;
     border-right: 134px solid transparent;
     position: absolute;
@@ -16641,9 +16638,10 @@ ul.products>li.product.list-view.list-view-small .button:active::after,
 }
 
 .btn-secondary:hover {
-    color: #373a3c;
-    background-color: #eac600;
-    border-color: #adadad;
+    color: #fff;
+    background-color: #dca24e;
+    border-color: #dca24e;
+    transition: all .5s;
 }
 
 .features-list .media-left i,
