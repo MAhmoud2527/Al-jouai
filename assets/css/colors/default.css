@@ -94,7 +94,7 @@ ul.products>li.product.list-view.list-view-small .button:active::after,
 .full-color-background .header-v3,
 .full-color-background .top-bar,
 .pace .pace-progress {
-    background-color: #c33728;
+    background-color: #00285b;
     color: #fff;
 }
 
@@ -441,4 +441,9 @@ a.map-btn {
 
 .footer-newsletter {
     background-color: #00285b!important;
+}
+
+table.cart .actions .checkout-button,
+input[type="submit"] {
+    color: #fff;
 }

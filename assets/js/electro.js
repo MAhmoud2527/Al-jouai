@@ -1483,8 +1483,8 @@
     });
     // Nice Scroll Body
     $("body").niceScroll({
-        cursorcolor: "#00285b",
-        cursorborder: "1px solid #00285b",
+        cursorcolor: "#fed700",
+        cursorborder: "1px solid #fed700",
     });
 
 
