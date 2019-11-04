@@ -435,8 +435,8 @@ input[type="submit"] {
     border-width: 0;
     display: inline-block;
     color: #fff;
-    background-color: #c33728;
-    border-color: #c33728;
+    background-color: #343f49;
+    border-color: #343f49;
 }
 
 .btn:hover,
@@ -5899,6 +5899,7 @@ div.quantity.buttons_added .plus {
 .header-support-info .support-icon {
     padding-right: 20px;
     padding-left: 15px;
+    float: left;
 }
 
 .header-support-info .support-icon .fa {
@@ -16268,7 +16269,7 @@ div#preloader {
 }
 
 .product-action-link .fa-heart {
-    background: #c33728;
+    background: #343f49;
     color: #fff;
     padding: 9px;
     border-radius: 50%;
@@ -16647,4 +16648,27 @@ ul.products>li.product.list-view.list-view-small .button:active::after,
 .features-list .media-left i,
 .features-list .media-body {
     color: #343f49!important;
+}
+
+.media-body,
+.media-left,
+.media-right {
+    color: #343f49;
+}
+
+.Section-curve-about {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    bottom: -210px;
+    width: 100%;
+    height: auto;
+    -webkit-transform: rotate(0.01deg);
+    transform: rotate(0.01deg);
+}
+
+.vc_single_image-wrapper img {
+    min-height: 250px;
+    max-height: 250px;
 }

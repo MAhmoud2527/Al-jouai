@@ -98,6 +98,12 @@ ul.products>li.product.list-view.list-view-small .button:active::after,
     color: #fff;
 }
 
+li.product:hover .button,
+li.product:hover .button::before,
+.owl-item .product:hover .button {
+    background-color: #343f49;
+}
+
 .hero-action-btn:hover {
     background-color: #00275bda !important;
 }
