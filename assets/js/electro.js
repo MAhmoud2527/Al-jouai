@@ -1503,7 +1503,7 @@
             autoplaySpeed: 3000,
             slidesToShow: 1,
             slidesToScroll: 1,
-            rows: $row,
+            rows: 3,
             prevArrow: '<button class="slick-prev"><i class="fa fa-angle-left"></i></button>',
             nextArrow: '<button class="slick-next"><i class="fa fa-angle-right"></i></button>',
             appendArrows: $arrowContainer,
