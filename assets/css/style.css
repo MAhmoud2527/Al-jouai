@@ -1647,7 +1647,7 @@ img.desaturate:hover {
     text-decoration: none;
     background-color: #f5f5f5;
     font-weight: bold;
-    border-left: solid 5px #00285b;
+    /* border-left: solid 5px #00285b; */
 }
 
 .vertical-menu>.menu-item:focus>a,
@@ -1656,6 +1656,10 @@ img.desaturate:hover {
 .vertical-menu .dropdown-menu>.menu-item:hover>a {
     background-color: #f5f5f5;
     font-weight: bold;
+}
+
+.vertical-menu>.menu-item:hover>a {
+    border-left: solid 6px #00285b;
 }
 
 .vertical-menu .menu-item-has-children a[data-toggle="dropdown"]::after {
