@@ -1420,7 +1420,7 @@ img.desaturate:hover {
 }
 
 .header-logo+.primary-nav {
-    padding: .9em .9375rem;
+    padding: 2.9em 4.9375rem;
 }
 
 
@@ -1925,7 +1925,7 @@ table.cart .coupon .navbar-search .input-text {
 
 .woocommerce-breadcrumb {
     margin-top: 1.786em;
-    margin-bottom: 3.571em;
+    margin-bottom: 2.571em;
 }
 
 .woocommerce-breadcrumb a {
@@ -5888,6 +5888,7 @@ div.quantity.buttons_added .plus {
     min-height: 1px;
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
+    padding: 1.9em 0.9375rem;
 }
 
 @media (min-width: 768px) {
@@ -6235,7 +6236,7 @@ table.cart .coupon .full-color-background .header-v3 .navbar-search .input-group
 }
 
 .primary-nav .nav-inline .menu-item .dropdown-menu {
-    top: 46px;
+    top: 62px;
 }
 
 .navbar-primary #header-v3 .navbar-nav>.menu-item>a[data-toggle="dropdown"]::after {
@@ -11806,10 +11807,24 @@ div.quantity>label {
     border-bottom-style: solid;
 }
 
+.venderdiv span,
+.venderdiv div {
+    display: inline-block;
+}
+
 .single-product .product_title {
     font-size: 1.786em;
     line-height: 1.280em;
-    margin-bottom: 0.480em;
+    margin-bottom: 0;
+}
+
+.other-vendor {
+    font-size: 15px;
+}
+
+.vendorName {
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
 .single-product .woocommerce-product-rating {
@@ -16241,13 +16256,17 @@ div#preloader {
     padding: 20px;
 }
 
+.venderProduct .tab-content ul.columns-4 .product {
+    padding: 0px;
+}
+
 #grid ul.products>li.product {
     padding: 0;
 }
 
 .tab-content .products li.product:hover {
     box-shadow: 1px 20px 20px 11px #ddd;
-    transition: all .2s;
+    transition: all .5s;
 }
 
 .tab-content .products li.product .fa-star {
@@ -16266,6 +16285,10 @@ div#preloader {
 .add_to_cart_button:hover {
     transform: rotate(360deg)!important;
     transition: all .5s;
+}
+
+.ajax_add_to_cart:hover {
+    transform: rotate(0deg)!important;
 }
 
 .fix .add_to_wishlist:hover {
@@ -16718,4 +16741,107 @@ ul.products>li.product.list-view.list-view-small .button:active::after,
     right: 0;
     bottom: 0;
     background-color: rgba(0, 40, 91, 0.33);
+}
+
+
+/* .noteDiv {
+    background: #d9534f;
+    margin: 10px 0;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 24px;
+    font-size: 16px;
+} */
+
+.noteDiv aside {
+    margin: 20px 0;
+    line-height: 34px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #00285b;
+}
+
+.noteDiv aside.ribbon {
+    background-color: #7DE3C8;
+}
+
+.noteDiv aside.ribbon:before {
+    border-color: #53dab6 #53dab6 #53dab6 transparent;
+    left: -25px;
+    border-width: 17px;
+}
+
+.noteDiv aside.ribbon:after {
+    border-color: #53dab6 transparent #53dab6 #53dab6;
+    right: -25px;
+    border-width: 17px;
+}
+
+.noteDiv aside.ribbon:before,
+.noteDiv aside.ribbon:after {
+    top: 5px;
+    z-index: -10;
+}
+
+.noteDiv aside:before,
+.noteDiv aside:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-width: 0;
+}
+
+.salesOfferstop,
+.salesNametop {
+    margin: 10px 0;
+}
+
+.salesOffers {
+    font-size: 20px;
+}
+
+.col5-unit label {
+    margin: 0 6px;
+}
+
+.col5-unit .count {
+    font-size: .7142857143rem;
+    color: #aeaeae;
+    /* margin-left: 5px; */
+    display: inline;
+}
+
+.allOfferFromSaler {
+    background: #f9f9f9;
+    margin: 20px 0;
+    border-top: 2px solid #00285b;
+    border-bottom: solid 2px #00285b;
+}
+
+.allOfferFromSaler table td {
+    line-height: 5.5;
+}
+
+.allOfferFromSalerImg {
+    min-height: 130px;
+    max-height: 130px;
+}
+
+.salesNametop .name-saler {
+    font-size: 18px;
+}
+
+.salesname {
+    margin: 0;
+}
+
+.numberOfItems {
+    color: #41414c;
+    margin: 0;
+    padding: 0;
 }
